@@ -40,14 +40,14 @@ export function BlogCard() {
         {contentBlockData.map((block, index) => (
           <section
             key={index}
-            className="pl-10 mt-5 w-full rounded-lg bg-zinc-900 bg-opacity-60 max-md:pl-5 max-md:max-w-full"
+            className="pl-10 mt-5 justify-center items-center w-[80%] xl:w-full rounded-lg bg-zinc-900 bg-opacity-60 max-md:pl-5 max-md:max-w-full"
           >
             <div className="flex gap-5 max-md:flex-col max-md:gap-0 ">
-              <div className="flex flex-col w-[67%] max-md:ml-0 max-md:w-full">
+              <div className="flex flex-col w-[50%] xl:w-[67%] max-md:ml-0 max-md:w-full">
                 <div className="flex flex-col self-stretch my-auto text-white max-md:mt-10 max-md:max-w-full">
                   <h2
                     className={
-                      "text-4xl leading-10 uppercase max-md:max-w-full " +
+                      "text-xl xl:text-4xl  uppercase max-md:max-w-full " +
                       font_Regular_MonumentExtended.className
                     }
                   >
@@ -58,12 +58,19 @@ export function BlogCard() {
                       "mt-4 text-lg leading-6 max-md:max-w-full " +
                       font_Regular_Satoshi.className
                     }
+                    style={{
+                      // max 2lines
+                      display: "-webkit-box",
+                      WebkitLineClamp: 3,
+                      WebkitBoxOrient: "vertical",
+                      overflow: "hidden",
+                    }}
                   >
                     {block.content}
                   </p>
                 </div>
               </div>
-              <div className="flex flex-col ml-5 w-[33%] max-md:ml-0 max-md:w-full">
+              <div className="flex flex-col ml-5 w-fit  xl:w-[33%] max-md:ml-0 max-md:w-full">
                 {block.imageUrl ? (
                   <img
                     loading="lazy"

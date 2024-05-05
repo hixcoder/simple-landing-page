@@ -31,13 +31,13 @@ export function ComingSoonCard() {
   return (
     <div className="flex justify-center items-center  py-20 bg-black ">
       <div className="mt-16 w-full max-w-[1440px] max-md:mt-10 max-md:max-w-full">
-        <div className="flex gap-5 max-md:flex-col max-md:gap-0 justify-between ">
+        <div className="flex  gap-2 xl:gap-5 max-md:flex-col max-md:gap-0 justify-center ">
           {tokenCardData.map((card, index) => (
             <div
               key={index}
               className={`flex flex-col ${
                 index > 0 ? "ml-5" : ""
-              } w-[33%] max-md:ml-0 max-md:w-full`}
+              } w-[20%] xl:w-[33%] max-md:ml-0 max-md:w-full`}
             >
               <ComingSoonItem {...card} />
             </div>

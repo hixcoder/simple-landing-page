@@ -24,7 +24,7 @@ export const ComingSoonItem: React.FC<ComingSoonItemProps> = ({
   const [isHovered, setIsHovered] = React.useState<boolean>(false);
   return (
     <div
-      className="flex flex-col grow pb-14 w-full rounded-md bg-zinc-900 bg-opacity-60 max-md:mt-10 relative "
+      className="flex flex-col grow pb-14  w-[100%] xl:w-full rounded-md bg-zinc-900 bg-opacity-60 max-md:mt-10 relative "
       onMouseEnter={() => {
         setIsHovered(true);
         console.log("hovered");
@@ -39,10 +39,10 @@ export const ComingSoonItem: React.FC<ComingSoonItemProps> = ({
       >
         COMING SOON
       </div>
-      <div className="flex flex-col px-8 mt-7 max-md:px-5 max-md:max-w-full">
+      <div className="flex flex-col px-4 mt-4 xl:px-8 xl:mt-7 max-md:px-5 max-md:max-w-full">
         <h2
           className={
-            "text-4xl leading-10 text-white uppercase " +
+            "text-2xl xl:text-4xl leading-10 text-white uppercase " +
             font_Regular_MonumentExtended.className
           }
         >
@@ -50,18 +50,22 @@ export const ComingSoonItem: React.FC<ComingSoonItemProps> = ({
         </h2>
         <div
           className={
-            "mt-9 text-2xl font-bold leading-7 bg-clip-text bg-gradient-to-r from-[#3D8BFF]  to-[#AB23FF]"
+            "xl:mt-9 mt-4 text-lg xl:text-2xl font-bold leading-7 bg-clip-text bg-gradient-to-r from-[#3D8BFF]  to-[#AB23FF]"
           }
           style={{
             WebkitBackgroundClip: "text",
             WebkitTextFillColor: "transparent",
+            // max 2lines
+            display: "-webkit-box",
+            WebkitLineClamp: 2,
+            WebkitBoxOrient: "vertical",
           }}
         >
           {shortDescription}
         </div>
       </div>
       <div
-        className="mt-16 max-w-full aspect-[1.82] w-[423px] max-md:mt-10"
+        className="xl:mt-16 mt-8  max-w-full aspect-[1.82] w-[423px] max-md:mt-10"
         style={{
           overflow: "hidden",
         }}

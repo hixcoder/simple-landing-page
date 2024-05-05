@@ -21,17 +21,16 @@ export default function Footer() {
   ];
   return (
     <footer className="footer border border-t-[#33353F] border-x-transparent text-white flex flex-col justify-center  items-center">
-      <div className="container py-12 flex flex-row justify-between items-center ">
+      <div className="container py-12 flex flex-row justify-center xl:justify-between items-center ">
         <div className="flex flex-row justify-between ">
           <p
             className={
-              "text-white w-96 mr-[10%] font-thin " +
-              font_Regular_Satoshi.className
+              "text-white w-96  font-thin " + font_Regular_Satoshi.className
             }
           >
             © Creon 2023. All rights reserved.
           </p>
-          <div className="flex flex-row gap-2">
+          <div className="flex flex-row gap-2 mx-[10%]">
             {data.map((item, index) => {
               return (
                 <a
