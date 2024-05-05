@@ -4,22 +4,27 @@ export function ComingSoonCard() {
   const tokenCardData = [
     {
       title: "token",
-      description: "The Gateway token to the world of AI",
-      imageUrl:
-        "https://cdn.builder.io/api/v1/image/assets/TEMP/17dda29d54330e827fc6c94660b6fb478010332b882277e1fc61b0cfd99b5f37?apiKey=15699259d57541149d8b9fecd26f59f3&",
+      description:
+        "Set to debut in the latter half of 2024, the CREON token serves as the pioneering link between cutting-edge AI initiatives and blockchain technology. This innovative token provides NFT and token holders with unparalleled access to our Launchpad, AI tools, and exclusive pre-launch investment prospects.",
+      shortDescription: "The Gateway token to the world of AI",
+      imageUrl: "/images/coming1.svg",
       altText: "Token image",
     },
     {
       title: "revenue",
-      description: "Driving income and growth through decentralization",
-      imageUrl: "",
-      altText: "",
+      shortDescription: "Driving income and growth through decentralization",
+      description:
+        "CREON NFT and token holders are integral participants in the profit-sharing from our launched AI-based enterprises. We support the development of AI tools, ensuring a steady revenue stream, all while allowing early investors to enjoy the benefits of their support.",
+      imageUrl: "/images/coming2.svg",
+      altText: "Token image",
     },
     {
       title: "launchpad",
-      description: "Driving the future of AI Innovation",
-      imageUrl: "",
-      altText: "",
+      shortDescription: "Driving the future of AI Innovation",
+      description:
+        "The Creon AI Launchpad, an essential component of our initiative, represents a groundbreaking opportunity in the realm of AI and blockchain. It provides the first known platform for acquiring allocations in tokenized AI projects, offering our community of NFT and CREON token holders early access to innovative and promising AI endeavors.",
+      imageUrl: "/images/coming3.svg",
+      altText: "Token image",
     },
   ];
 

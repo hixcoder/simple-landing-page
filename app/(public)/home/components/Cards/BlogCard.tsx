@@ -24,7 +24,12 @@ export function BlogCard() {
   ];
 
   return (
-    <div className="flex flex-col">
+    <div
+      className="flex flex-col"
+      style={{
+        backgroundImage: `url(/images/blog_bg.svg)`,
+      }}
+    >
       {contentBlockData.map((block, index) => (
         <section
           key={index}

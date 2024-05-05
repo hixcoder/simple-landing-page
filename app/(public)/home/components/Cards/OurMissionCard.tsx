@@ -1,10 +1,82 @@
-import { Accordion, AccordionDetails, AccordionSummary } from "@mui/material";
-import ExpandMoreIcon from "@mui/icons-material/ExpandMore";
-export function OurMissionCard() {
-  const ext0 = "/images/mission1p1.svg";
-  const ext1 = "/images/mission1p1.svg";
+import { Span } from "next/dist/trace";
+import { OurMissionItem } from "../OurMissionItem";
 
+export function OurMissionCard() {
   const ext2 = "/images/image2.svg";
+  const data = [
+    {
+      img: "/images/mission1-1.svg",
+      clickedImg: "/images/mission1-2.svg",
+      title: (
+        <span>
+          Profitability and <br /> Growth
+        </span>
+      ),
+      content: (
+        <span>
+          At Creon, we handpick cutting-edge AI projects and offer our community
+          and token holders early access and investment opportunities. Our
+          community actively contributes to the growth and profitability of
+          these projects, creating a dynamic ecosystem of innovation and shared
+          success.
+        </span>
+      ),
+    },
+
+    {
+      img: "/images/mission2-1.svg",
+      clickedImg: "/images/mission2-2.svg",
+      title: (
+        <span>
+          Transparent & Fair Decentralized <br /> Earnings
+        </span>
+      ),
+      content: (
+        <span>
+          We believe that the future of AI blockchain projects lies in the hands
+          of the community. By prioritizing our community, we democratize
+          profits and empower our members to shape the future of the industry.
+        </span>
+      ),
+    },
+    {
+      img: "/images/mission3-1.svg",
+      clickedImg: "/images/mission3-2.svg",
+      title: (
+        <span>
+          Launching the
+          <br /> future
+        </span>
+      ),
+      content: (
+        <span>
+          Creon is committed to fostering innovation and collaboration in the AI
+          blockchain space. By connecting projects with our community, we
+          facilitate the exchange of ideas and resources, driving the industry
+          forward.
+        </span>
+      ),
+    },
+
+    {
+      img: "/images/mission4-1.svg",
+      clickedImg: "/images/mission4-2.svg",
+      title: (
+        <span>
+          Limitless Possibilities of AI
+          <br /> & Crypto
+        </span>
+      ),
+      content: (
+        <span>
+          Transparency and trust are at the core of Creon’s values. We are
+          committed to providing our community with access to the information
+          and resources they need to make informed decisions and build trust in
+          the projects we support.
+        </span>
+      ),
+    },
+  ];
   return (
     <section className="flex flex-col items-center pt-20 bg-black">
       <div className="flex flex-col mt-9 w-full max-w-[1440px] max-md:max-w-full">
@@ -24,60 +96,17 @@ export function OurMissionCard() {
               />
             </div>
             <div className="flex flex-col ml-5 w-[41%] max-md:ml-0 max-md:w-full">
-              <div className="flex flex-col grow pb-20 text-white max-md:mt-10 max-md:max-w-full">
-                <div className="flex flex-col pb-8 border-b border-solid border-zinc-900 max-md:max-w-full">
-                  <div className="flex gap-5 justify-between pr-5 w-full text-2xl font-bold leading-7 max-md:flex-wrap max-md:max-w-full">
-                    <div className="flex gap-5 justify-between items-start">
-                      <img
-                        loading="lazy"
-                        src={ext0}
-                        alt=""
-                        className="shrink-0 max-w-full aspect-[0.88] w-[100px]"
-                      />
-                      <Accordion
-                        sx={{
-                          backgroundColor: "black",
-                          color: "white",
-                          display: "flex",
-                          flexDirection: "column",
-                          justifyContent: "top",
-                          alignItems: "center",
-                        }}
-                      >
-                        <AccordionSummary
-                          sx={{
-                            py: 0,
-                          }}
-                          expandIcon={
-                            <ExpandMoreIcon
-                              sx={{
-                                color: "white",
-                                my: 0,
-                              }}
-                            />
-                          }
-                          aria-controls="panel1-content"
-                          id="panel1-header"
-                        >
-                          <h3 className="my-auto w-[366px]">
-                            Profitability and <br /> Growth
-                          </h3>
-                        </AccordionSummary>
-                        <AccordionDetails>
-                          <p className="self-end text-lg leading-6 w-[422px] max-md:max-w-full">
-                            At Creon, we handpick cutting-edge AI projects and
-                            offer our community and token holders early access
-                            and investment opportunities. Our community actively
-                            contributes to the growth and profitability of these
-                            projects, creating a dynamic ecosystem of innovation
-                            and shared success.
-                          </p>
-                        </AccordionDetails>
-                      </Accordion>
-                    </div>
-                  </div>
-                </div>
-              </div>
+              {data.map((item, index) => {
+                return (
+                  <OurMissionItem
+                    key={index}
+                    title={item.title}
+                    content={item.content}
+                    img={item.img}
+                    clickedImg={item.clickedImg}
+                  />
+                );
+              })}
             </div>
           </div>
         </div>
