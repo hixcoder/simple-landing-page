@@ -22,9 +22,15 @@ export function OpeningCard() {
           <div className="flex justify-center self-start mt-14 max-w-max max-md:mt-10">
             <p
               className={
-                "text-2xl font-bold leading-7 bg-clip-text bg-gradient-to-r from-blue-300 to-purple-800 border-t border-b border-solid border-gradient-r-blue-500 p-4 max-md:max-w-full " +
+                "text-2xl font-bold leading-7 p-4 max-md:max-w-full bg-gradient-to-r from-[#3D8BFF] to-[#AB23FF] border-t border-b border-solid border-gradient-r-blue-500 " +
                 font_Bold_Satoshi.className
               }
+              style={{
+                WebkitBackgroundClip: "text",
+                WebkitTextFillColor: "transparent",
+                borderImage: "linear-gradient(to right, #0468ff, #7e06c9)",
+                borderImageSlice: "1",
+              }}
             >
               {subtitle}
             </p>
@@ -32,6 +38,7 @@ export function OpeningCard() {
         </div>
         <div className="bg-gradient-to-t from-black via-[#0468ff] to-[#7e06c9] absolute inset-0 h-full opacity-40 "></div>
         <div className=" bg-gradient-to-t from-black via-transparent to-transparent absolute inset-0 h-full "></div>
+        <div className="bg-black absolute inset-0 h-full opacity-10"></div>
       </div>
     </div>
   );

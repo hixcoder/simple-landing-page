@@ -28,9 +28,13 @@ export function CreonPassCard() {
             <div className="mt-10 h-px bg-zinc-900" />
             <p
               className={
-                "my-8 text-xl md:text-2xl font-bold leading-7 " +
+                "my-8 text-xl md:text-2xl font-bold leading-7 bg-gradient-to-r from-[#3D8BFF] to-[#AB23FF] " +
                 font_Bold_Satoshi.className
               }
+              style={{
+                WebkitBackgroundClip: "text",
+                WebkitTextFillColor: "transparent",
+              }}
             >
               The Creon NFT pass unlocks access to AI projects, the Creon
               launchpad, and a ticket to generate passive income through
@@ -49,7 +53,7 @@ export function CreonPassCard() {
             ))}
             <button
               className={
-                "px-16 py-5 mt-20 font-bold text-center text-white rounded-md bg-gradient-to-r from-blue-500 to-purple-500 w-full md:w-auto " +
+                "px-16 py-5 mt-20 font-bold text-center text-white rounded-md bg-gradient-to-r from-[#3D8BFF] to-[#AB23FF] w-full md:w-auto " +
                 font_Bold_Satoshi.className
               }
             >
@@ -65,8 +69,8 @@ export function CreonPassCard() {
             className="w-full aspect-square "
           />
           <div className="absolute inset-0 flex flex-col justify-between h-full ">
-            <div className="h-32 bg-gradient-to-b from-black to-transparent"></div>
-            <div className="h-32 bg-gradient-to-t from-black to-transparent"></div>
+            <div className="h-16 bg-gradient-to-b from-black to-transparent"></div>
+            <div className="h-16 bg-gradient-to-t from-black to-transparent"></div>
           </div>
         </div>
       </div>

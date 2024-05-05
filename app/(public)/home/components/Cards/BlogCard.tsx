@@ -56,7 +56,7 @@ export function BlogCard() {
                   <p
                     className={
                       "mt-4 text-lg leading-6 max-md:max-w-full " +
-                      font_Regular_Satoshi
+                      font_Regular_Satoshi.className
                     }
                   >
                     {block.content}

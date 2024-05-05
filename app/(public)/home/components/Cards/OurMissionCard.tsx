@@ -86,20 +86,35 @@ export function OurMissionCard() {
             <div className="flex flex-col w-[59%] max-md:ml-0 max-md:w-full ">
               <h2
                 className={
-                  "w-full text-4xl leading-10 text-white uppercase bg-clip-text bg-[linear-gradient(90deg,#3D8BFF_0%,#AB23FF_100%)] max-md:mt-10 max-md:max-w-full " +
+                  "w-full text-4xl leading-10 text-white uppercase bg-clip-text  max-md:mt-10 max-md:max-w-full    " +
                   font_Regular_MonumentExtended.className
                 }
               >
                 Our vision is to support the innovation of AI blockchain
-                projects while prioritizing communities and democratizing
-                profits
+                projects
+                <span
+                  className="bg-gradient-to-r from-[#3D8BFF]  to-[#AB23FF]"
+                  style={{
+                    WebkitBackgroundClip: "text",
+                    WebkitTextFillColor: "transparent",
+                  }}
+                >
+                  while prioritizing communities and democratizing profits
+                </span>
               </h2>
-              <img
-                loading="lazy"
-                src={ext2}
-                alt="ff"
-                className="w-full h-auto max-w-[1321px] aspect-w-24 aspect-h-10 max-md:max-w-full"
-              />
+              <div className="relative">
+                <img
+                  loading="lazy"
+                  src={ext2}
+                  alt="ff"
+                  className="w-full h-auto max-w-[1321px] aspect-w-24 aspect-h-10 max-md:max-w-full "
+                />
+                <div className="absolute inset-0 flex flex-col justify-between h-full">
+                  <div className="h-16 bg-gradient-to-b from-black to-transparent"></div>
+                  <div className="h-16 bg-gradient-to-t from-black to-transparent"></div>
+                  {/* Add inner shadows from left and right */}
+                </div>
+              </div>
             </div>
             <div className="flex flex-col ml-5 w-[41%] max-md:ml-0 max-md:w-full">
               {data.map((item, index) => {

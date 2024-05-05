@@ -34,9 +34,13 @@ export function ProfitingThroughCard() {
         </h1>
         <h2
           className={
-            "self-end mt-11 text-4xl leading-10 text-right uppercase bg-clip-text max-md:mt-10 max-md:max-w-full " +
+            "self-end mt-11 text-4xl leading-10 text-right uppercase  max-md:mt-10 max-md:max-w-full  bg-gradient-to-r from-[#3D8BFF] via-[#AB23FF] to-[#AB23FF] " +
             font_Regular_MonumentExtended.className
           }
+          style={{
+            WebkitBackgroundClip: "text",
+            WebkitTextFillColor: "transparent",
+          }}
         >
           {heroSectionData.subtitle}
         </h2>

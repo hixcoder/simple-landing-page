@@ -72,7 +72,11 @@ export default function NavBar(props: { className?: string }) {
           href={"/"}
           className="text-2xl md:text-5xl text-white font-semibold"
         >
-          <img className="h-4 mr-2 sm:h-8" src="/images/Logo.webp" alt="logo" />
+          <img
+            className="h-4 mr-2 sm:h-10"
+            src="/images/Logo.webp"
+            alt="logo"
+          />
         </Link>
         <div className="mobile-menu block md:hidden">
           {!navbarOpen ? (
@@ -104,7 +108,7 @@ export default function NavBar(props: { className?: string }) {
               </li>
             ))}
             <li>
-              <div className="justify-center px-8 py-4 text-lg text-center  cursor-pointer text-white whitespace-nowrap rounded-md border-2 border-white border-solid max-md:px-5">
+              <div className="justify-center px-8 py-2 text-lg text-center  cursor-pointer text-white whitespace-nowrap rounded-md border-2 border-white border-solid max-md:px-5">
                 Connect
               </div>
             </li>

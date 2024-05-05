@@ -11,10 +11,12 @@ export default function NavLink(prompt: {
         <Link
           href={prompt.href}
           className={
-            "text-lg text-white transition-all " + prompt.isComingSoon
-              ? "hover:text-blue-600 cursor-pointer"
-              : "cursor-default"
+            "text-lg text-white transition-all cursor-default" +
+            (!prompt.isComingSoon ? " hover:text-blue-500" : "")
           }
+          style={{
+            cursor: prompt.isComingSoon ? "default" : "pointer",
+          }}
         >
           {prompt.title}
         </Link>

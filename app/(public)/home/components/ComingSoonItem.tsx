@@ -50,9 +50,12 @@ export const ComingSoonItem: React.FC<ComingSoonItemProps> = ({
         </h2>
         <div
           className={
-            "mt-9 text-2xl font-bold leading-7 bg-clip-text bg-[linear-gradient(90deg,#3D8BFF_0%,#AB23FF_100%)] " +
-            font_Bold_Satoshi.className
+            "mt-9 text-2xl font-bold leading-7 bg-clip-text bg-gradient-to-r from-[#3D8BFF]  to-[#AB23FF]"
           }
+          style={{
+            WebkitBackgroundClip: "text",
+            WebkitTextFillColor: "transparent",
+          }}
         >
           {shortDescription}
         </div>
