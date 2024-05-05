@@ -83,10 +83,10 @@ export function OurMissionCard() {
       <div className="flex flex-col mt-9 w-full max-w-[1440px] max-md:max-w-full">
         <div className="z-10 max-md:max-w-full">
           <div className="flex gap-5 max-md:flex-col max-md:gap-0">
-            <div className="flex flex-col w-[59%] max-md:ml-0 max-md:w-full ">
+            <div className="flex flex-col w-[50%] xl:w-[59%] h-fit max-md:ml-0 max-md:w-full pl-20 xl:pl-0 items-center  ">
               <h2
                 className={
-                  "w-full text-4xl leading-10 text-white uppercase bg-clip-text  max-md:mt-10 max-md:max-w-full    " +
+                  "w-[60%] xl:w-full  text-lg xl:text-4xl max-md:text-4xl  text-white uppercase bg-clip-text  max-md:mt-10 max-md:max-w-full    " +
                   font_Regular_MonumentExtended.className
                 }
               >
@@ -116,7 +116,7 @@ export function OurMissionCard() {
                 </div>
               </div>
             </div>
-            <div className="flex flex-col ml-5 w-[41%] max-md:ml-0 max-md:w-full">
+            <div className="flex flex-col xl:ml-5 w-[41%] max-md:ml-0 max-md:w-full">
               {data.map((item, index) => {
                 return (
                   <OurMissionItem

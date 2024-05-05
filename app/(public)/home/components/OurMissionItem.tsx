@@ -17,7 +17,7 @@ export function OurMissionItem(props: {
   const [isHovered, setIsHovered] = useState<boolean>(false);
   return (
     <div
-      className={`flex flex-col  pb-4 text-white max-md:max-w-full cursor-pointer `}
+      className={`flex flex-col  pb-4 text-white max-md:max-w-full cursor-pointer w-[40%] xl:w-[100%]`}
       onMouseEnter={() => {
         setIsHovered(true);
         console.log("hovered");
@@ -27,7 +27,7 @@ export function OurMissionItem(props: {
       <div className="flex flex-col pb-8 border-b border-solid border-zinc-900 max-md:max-w-full">
         <div className="flex gap-5 justify-between pr-5 w-full text-2xl font-bold leading-7 max-md:flex-wrap max-md:max-w-full">
           <div
-            className="flex gap-5 justify-between items-start"
+            className="flex gap-2 xl:gap-5 justify-between items-start"
             onClick={() => {
               setIsExpanded((prev) => !prev);
               console.log("clicked" + isExpanded);
@@ -37,7 +37,7 @@ export function OurMissionItem(props: {
               loading="lazy"
               src={isExpanded ? props.clickedImg : props.img}
               alt=""
-              className="shrink-0 max-w-full aspect-[0.88] w-[100px] "
+              className="shrink-0 max-w-full aspect-[0.88] xl:w-[6.25rem] w-[5rem] "
               style={{
                 // opacity: isExpanded ? 0.5 : 1,
                 transition: "opacity 0.5s ease-in-out",
@@ -74,7 +74,10 @@ export function OurMissionItem(props: {
                 id="panel1-header"
               >
                 <h3
-                  className={`my-auto w-[366px] ` + font_Bold_Satoshi.className}
+                  className={
+                    `my-auto w-[18rem] xl:w-[22.875rem] ` +
+                    font_Bold_Satoshi.className
+                  }
                   style={{
                     color: isHovered && !isExpanded ? "#3B82F6" : "white",
                     transition: "color 0.5s",
@@ -86,7 +89,7 @@ export function OurMissionItem(props: {
               <AccordionDetails>
                 <p
                   className={
-                    "self-end text-lg leading-6 font-light w-[422px] max-md:max-w-full " +
+                    "self-end text-lg leading-6 font-light w-[18rem] xl:w-[26.375rem] max-md:max-w-full cursor-text " +
                     font_Regular_Satoshi.className
                   }
                 >

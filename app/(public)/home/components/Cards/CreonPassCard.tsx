@@ -14,12 +14,12 @@ export function CreonPassCard() {
 
   return (
     <div className="max-w-full">
-      <div className="flex flex-col w-full max-w-[1440px] md:flex-row">
-        <div className="w-full md:w-6/12">
+      <div className="flex flex-col  w-full max-w-[1440px] md:flex-row md:justify-center">
+        <div className="w-full md:w-[30%] xl:w-[50%]">
           <div className="my-auto">
             <h1
               className={
-                "text-4xl md:text-7xl text-white uppercase  " +
+                " text-4xl xl:text-5xl 2xl:text-7xl max-md:text-4xl mt-10 text-white uppercase  " +
                 font_Regular_MonumentExtended.className
               }
             >
@@ -61,16 +61,16 @@ export function CreonPassCard() {
             </button>
           </div>
         </div>
-        <div className="ml-0 md:ml-5 w-full md:w-6/12 relative mt-10">
+        <div className="ml-0 md:ml-5 w-full h-fit md:w-[40%]  xl:w-[50%] relative mt-10  p-0">
           <img
             loading="lazy"
             src="https://cdn.builder.io/api/v1/image/assets/TEMP/e3a6f9c1bd4b83c1acca279ef5db56af18e690b9fea130dde1126bfc999e487f?apiKey=15699259d57541149d8b9fecd26f59f3&"
             alt="Creon Pass NFT"
-            className="w-full aspect-square "
+            className="h-full w-full object-cover rounded-md shadow-2xl"
           />
-          <div className="absolute inset-0 flex flex-col justify-between h-full ">
-            <div className="h-16 bg-gradient-to-b from-black to-transparent"></div>
-            <div className="h-16 bg-gradient-to-t from-black to-transparent"></div>
+          <div className="absolute inset-0 flex flex-col justify-between h-full p-0">
+            <div className="h-16 bg-gradient-to-b from-black via-black to-transparent"></div>
+            <div className="h-16 bg-gradient-to-t from-black via-black to-transparent"></div>
           </div>
         </div>
       </div>

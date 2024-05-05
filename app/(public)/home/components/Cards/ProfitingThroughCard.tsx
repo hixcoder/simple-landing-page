@@ -22,11 +22,11 @@ export function ProfitingThroughCard() {
     imageAlt: "Creon network image",
   };
   return (
-    <section className="flex justify-center items-center  py-20 bg-black ">
-      <div className="flex flex-col mt-12 w-full max-w-[1440px] max-md:mt-10 max-md:max-w-full">
+    <section className="flex flex-col justify-center items-center py-[3.125rem] bg-black  mt-[3rem] ">
+      <div className="w-full md:w-[68%] xl:w-[100%]">
         <h1
           className={
-            "text-7xl text-white uppercase leading-[74.8px] max-md:max-w-full max-md:text-4xl " +
+            "text-white uppercase xl:leading-[4.6875rem] max-md:max-w-full text-4xl xl:text-5xl 2xl:text-7xl max-md:text-4xl " +
             font_Regular_MonumentExtended.className
           }
         >
@@ -34,7 +34,7 @@ export function ProfitingThroughCard() {
         </h1>
         <h2
           className={
-            "self-end mt-11 text-4xl leading-10 text-right uppercase  max-md:mt-10 max-md:max-w-full  bg-gradient-to-r from-[#3D8BFF] via-[#AB23FF] to-[#AB23FF] " +
+            "self-end mt-[1.75rem] text-4xl leading-10 text-right uppercase max-md:mt-[1.25rem] max-md:max-w-full bg-gradient-to-r from-[#3D8BFF] via-[#AB23FF] to-[#AB23FF] " +
             font_Regular_MonumentExtended.className
           }
           style={{
@@ -44,15 +44,17 @@ export function ProfitingThroughCard() {
         >
           {heroSectionData.subtitle}
         </h2>
-        <div className="flex gap-5 justify-between mt-24 text-white max-md:flex-wrap max-md:mt-10 max-md:max-w-full">
+      </div>
+      <div className="flex flex-col mt-[3rem]  w-full md:w-[68%] xl:w-[100%] max-w-[90rem] max-md:mt-[1.25rem] max-md:max-w-full">
+        <div className="flex gap-[0.3125rem] justify-between mt-[3.75rem] text-white max-md:flex-wrap max-md:mt-[1.25rem] max-md:max-w-full">
           <img
             loading="lazy"
             src={heroSectionData.imageUrl}
             alt={heroSectionData.imageAlt}
-            className="w-full aspect-[5] max-md:max-w-full "
+            className="w-full md:w-[50%] h-[20.3125rem]"
           />
-          <div className="shrink-0 w-px bg-zinc-900 h-[485px]" />
-          <div className="flex flex-col justify-end my-auto w-[40%]">
+          <div className="shrink-0 w-[1px] bg-zinc-900 h-[30.3125rem]" />
+          <div className="flex flex-col justify-end my-auto w-[30%]">
             <h3
               className={
                 "text-2xl font-bold leading-7 " + font_Bold_Satoshi.className
@@ -62,13 +64,14 @@ export function ProfitingThroughCard() {
             </h3>
             <p
               className={
-                "mt-7 text-lg leading-6 " + font_Regular_Satoshi.className
+                "mt-[1.75rem] text-lg leading-6 " +
+                font_Regular_Satoshi.className
               }
             >
               {heroSectionData.description}
             </p>
           </div>
-          <div className="shrink-0 w-px bg-zinc-900 h-[485px]" />
+          <div className="shrink-0 w-[1px] bg-zinc-900 h-[30.3125rem]" />
         </div>
       </div>
     </section>
