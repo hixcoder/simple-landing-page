@@ -15,7 +15,7 @@ export function OpeningCard() {
       <div className="bg-transparent"></div>
       <div>
         <div className="p-[10%] relative z-10">
-          <h1 className=" text-white uppercase  xl:leading-[4.6875rem] max-md:max-w-full text-4xl xl:text-5xl 2xl:text-7xl max-md:text-4xl max-md:leading-[3.0625rem]">
+          <h1 className="text-white uppercase text-lg lg:text-4xl xl:text-5xl 2xl:text-7xl max-md:text-4xl">
             {title}
           </h1>
           <div className="flex justify-center self-start mt-[2.25rem] max-w-max max-md:mt-[1.25rem]">

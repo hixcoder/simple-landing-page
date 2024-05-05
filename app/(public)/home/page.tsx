@@ -10,20 +10,24 @@ import { ProfitingThroughCard } from "./components/Cards/ProfitingThroughCard";
 export default function Home() {
   return (
     <div
-      className="flex flex-col items-center justify-center min-h-screen
-      overflow-hidden 
+      className="flex flex-col items-center justify-center 
     "
     >
-      <video
-        src={"/videos/main-background-video.mp4"}
-        autoPlay
-        loop
-        muted
-        className="h-screen "
-      />
+      <div
+        className="min-h-screen w-full
+      overflow-hidden relative"
+      >
+        <video
+          src={"/videos/main-background-video.mp4"}
+          autoPlay
+          loop
+          muted
+          className="h-screen "
+        />
+        <OpeningCard />
+      </div>
       <div className="flex flex-col items-center justify-center min-h-screen ">
-        <div className="px-[10%]">
-          <OpeningCard />
+        <div className="lg:px-[10%] ">
           <CreonPassCard />
           <ProfitingThroughCard />
           <OurMissionCard />

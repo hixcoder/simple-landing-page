@@ -12,7 +12,7 @@ export default function NavLink(prompt: {
           href={prompt.href}
           className={
             "text-lg text-white transition-all cursor-default" +
-            (!prompt.isComingSoon ? " hover:text-blue-500" : "")
+            (!prompt.isComingSoon ? " hover:text-[#3D8BFF] " : "")
           }
           style={{
             cursor: prompt.isComingSoon ? "default" : "pointer",
@@ -21,7 +21,7 @@ export default function NavLink(prompt: {
           {prompt.title}
         </Link>
         {prompt.isComingSoon && (
-          <div className="justify-center self-start px-1 pt-0.5 pb-px text-xs text-purple-600 bg-black rounded-[100px]">
+          <div className="justify-center self-start px-1 pt-0.5 pb-px text-xs text-[#AB23FF] bg-black rounded-[100px]">
             SOON
           </div>
         )}

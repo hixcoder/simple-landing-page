@@ -4,6 +4,7 @@ import {
 } from "@/assets/fonts/fonts_export";
 import { FaDiscord } from "react-icons/fa";
 import { FaTwitter } from "react-icons/fa";
+import { FaTelegramPlane } from "react-icons/fa";
 export default function Footer() {
   const data = [
     {
@@ -16,7 +17,7 @@ export default function Footer() {
     },
     {
       href: "https://telegram.me/",
-      icon: <FaTwitter className="text-md" />,
+      icon: <FaTelegramPlane className="text-md" />,
     },
   ];
   return (

@@ -37,3 +37,29 @@ video {
   height: 100%;
   object-fit: cover;
 }
+
+.leaflet-bottom {
+  display: none !important;
+}
+
+.placement-bottom-start {
+  z-index: 9999 !important;
+  /* left: 30.6% !important; */
+  /* top:1% !important; */
+  /* max-width: 100% !important; */
+}
+.menu-flags-1 {
+  background-color: transparent;
+}
+
+.menu-flags-1 button {
+  background-color: white;
+  border: none;
+  border-bottom: #7e7e7e 1px solid;
+  border-radius: 0;
+}
+
+.form-input-container {
+  display: inline-block;
+  margin-right: 10px;
+}
