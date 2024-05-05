@@ -1,3 +1,4 @@
+import { Typography } from "@mui/material";
 import {
   font_Regular_MonumentExtended,
   font_Bold_Satoshi,
@@ -15,9 +16,20 @@ export function OpeningCard() {
       <div className="bg-transparent"></div>
       <div>
         <div className="p-[10%] relative z-10">
-          <h1 className="text-white uppercase text-lg lg:text-4xl xl:text-5xl 2xl:text-7xl max-md:text-4xl">
+          <Typography
+            // sx={{
+            //   color: "white",
+            //   "@media (min-width: 1024px)": {
+            //     fontSize: "4rem",
+            //   },
+            // }}
+            className={
+              "text-white uppercase text-2xl lg:text-4xl xl:text-5xl 2xl:text-7xl max-md:text-4xl " +
+              font_Regular_MonumentExtended.className
+            }
+          >
             {title}
-          </h1>
+          </Typography>
           <div className="flex justify-center self-start mt-[2.25rem] max-w-max max-md:mt-[1.25rem]">
             <p
               className={

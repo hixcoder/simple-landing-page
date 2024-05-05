@@ -35,12 +35,12 @@ export function BlogCard() {
         backgroundImage: `url(/images/blog_bg.webp)`,
       }}
     >
-      <div className="flex flex-col ">
+      <div className="flex flex-col  w-full">
         {" "}
         {contentBlockData.map((block, index) => (
           <section
             key={index}
-            className="pl-10 mt-5 justify-center items-center w-[80%] xl:w-full rounded-lg bg-zinc-900 bg-opacity-60 max-md:pl-5 max-md:max-w-full"
+            className="pl-10 mt-5 justify-center items-center w-[80%] lg:w-full rounded-lg bg-zinc-900 bg-opacity-60 max-md:pl-5 max-md:max-w-full"
           >
             <div className="flex gap-5 max-md:flex-col max-md:gap-0 ">
               <div className="flex flex-col w-[50%] xl:w-[67%] max-md:ml-0 max-md:w-full">

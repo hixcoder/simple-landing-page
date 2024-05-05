@@ -86,7 +86,7 @@ export function OurMissionCard() {
             <div className="flex flex-col w-[50%] xl:w-[59%] h-fit max-md:ml-0 max-md:w-full pl-20 xl:pl-0 items-center  ">
               <h2
                 className={
-                  "w-[60%] xl:w-full  text-lg xl:text-4xl max-md:text-4xl  text-white uppercase bg-clip-text  max-md:mt-10 max-md:max-w-full    " +
+                  "w-[40%] xl:w-full mx-auto text-xl xl:text-4xl max-md:text-4xl  text-white uppercase bg-clip-text  max-md:mt-10 max-md:max-w-full    " +
                   font_Regular_MonumentExtended.className
                 }
               >

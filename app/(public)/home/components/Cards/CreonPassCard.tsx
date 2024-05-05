@@ -19,7 +19,7 @@ export function CreonPassCard() {
        lg:w-full lg:max-w-[1440px]
       "
       >
-        <div className="p-8 lg:p-0 mx-auto w-[90%] md:w-[40%] lg:w-[30%] xl:w-[50%]">
+        <div className="p-8 lg:p-0 mx-auto w-[100%] md:w-[40%] lg:w-[30%] xl:w-[50%]">
           <div className="my-auto">
             <h1
               className={
@@ -70,7 +70,7 @@ export function CreonPassCard() {
             loading="lazy"
             src="https://cdn.builder.io/api/v1/image/assets/TEMP/e3a6f9c1bd4b83c1acca279ef5db56af18e690b9fea130dde1126bfc999e487f?apiKey=15699259d57541149d8b9fecd26f59f3&"
             alt="Creon Pass NFT"
-            className="h-full w-full object-cover rounded-lg shadow-2xl"
+            className="h-full w-full object-cover rounded-lg shadow-2xl md:w-[60%] mx-auto lg:w-full"
           />
           <div className="absolute inset-0 flex flex-col justify-between h-full p-0">
             <div className="h-16 bg-gradient-to-b from-black via-black to-transparent"></div>

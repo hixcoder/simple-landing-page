@@ -21,17 +21,17 @@ export default function Footer() {
     },
   ];
   return (
-    <footer className="footer border border-t-[#33353F] border-x-transparent text-white flex flex-col justify-center  items-center">
+    <footer className="footer border border-t-[#33353F] border-x-transparent text-white flex flex-col justify-center  items-center overflow-hidden">
       <div className="container py-12 flex flex-row justify-center xl:justify-between items-center ">
         <div className="flex flex-row justify-between ">
           <p
             className={
-              "text-white w-96  font-thin " + font_Regular_Satoshi.className
+              "text-white lg:w-96  font-thin " + font_Regular_Satoshi.className
             }
           >
             © Creon 2023. All rights reserved.
           </p>
-          <div className="flex flex-row gap-2 mx-[10%]">
+          <div className="hidden lg:flex flex-row gap-2 lg:mx-[10%]">
             {data.map((item, index) => {
               return (
                 <a
@@ -47,7 +47,11 @@ export default function Footer() {
             })}
           </div>
         </div>
-        <p className={"text-white " + font_Regular_Satoshi.className}>
+        <p
+          className={
+            "text-white hidden lg:block " + font_Regular_Satoshi.className
+          }
+        >
           powered by{" "}
           <span className={"text-lg " + font_Bold_Satoshi.className}>
             niftables
