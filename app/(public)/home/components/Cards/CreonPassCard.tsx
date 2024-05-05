@@ -1,3 +1,9 @@
+import {
+  font_Regular_MonumentExtended,
+  font_Bold_Satoshi,
+  font_Regular_Satoshi,
+} from "../../../../../assets/fonts/fonts_export";
+
 export function CreonPassCard() {
   const benefits = [
     "Pre-launch investment opportunities for upcoming AI projects",
@@ -8,14 +14,24 @@ export function CreonPassCard() {
 
   return (
     <div className="max-w-full">
-      <div className="flex flex-col max-w-full md:flex-row">
+      <div className="flex flex-col w-full max-w-[1440px] md:flex-row">
         <div className="w-full md:w-6/12">
           <div className="my-auto">
-            <h1 className="text-4xl md:text-7xl text-white uppercase leading-[75px] md:leading-[49px]">
+            <h1
+              className={
+                "text-4xl md:text-7xl text-white uppercase  " +
+                font_Regular_MonumentExtended.className
+              }
+            >
               Creon Pass NFT
             </h1>
             <div className="mt-10 h-px bg-zinc-900" />
-            <p className="mt-9 text-xl md:text-2xl font-bold leading-7">
+            <p
+              className={
+                "my-8 text-xl md:text-2xl font-bold leading-7 " +
+                font_Bold_Satoshi.className
+              }
+            >
               The Creon NFT pass unlocks access to AI projects, the Creon
               launchpad, and a ticket to generate passive income through
               AI-driven tools
@@ -23,12 +39,20 @@ export function CreonPassCard() {
             {benefits.map((benefit, index) => (
               <div
                 key={index}
-                className="px-5 pt-3 pb-3.5 mt-2.5 text-white rounded-md border border-solid border-zinc-900"
+                className={
+                  "px-5 pt-3 pb-3.5 mt-2.5 text-white rounded-md border border-solid border-zinc-900 " +
+                  font_Regular_Satoshi.className
+                }
               >
                 {benefit}
               </div>
             ))}
-            <button className="px-16 py-5 mt-20 font-bold text-center text-white rounded-md bg-gradient-to-r from-blue-500 to-purple-500 w-full md:w-auto">
+            <button
+              className={
+                "px-16 py-5 mt-20 font-bold text-center text-white rounded-md bg-gradient-to-r from-blue-500 to-purple-500 w-full md:w-auto " +
+                font_Bold_Satoshi.className
+              }
+            >
               Buy Creon Pass
             </button>
           </div>
@@ -41,8 +65,8 @@ export function CreonPassCard() {
             className="w-full aspect-square "
           />
           <div className="absolute inset-0 flex flex-col justify-between h-full ">
-            <div className="h-48 bg-gradient-to-b from-black to-transparent"></div>
-            <div className="h-48 bg-gradient-to-t from-black to-transparent"></div>
+            <div className="h-32 bg-gradient-to-b from-black to-transparent"></div>
+            <div className="h-32 bg-gradient-to-t from-black to-transparent"></div>
           </div>
         </div>
       </div>

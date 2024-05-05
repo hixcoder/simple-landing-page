@@ -4,8 +4,9 @@ import NavLink from "./NavLink";
 import { useEffect, useState } from "react";
 // import { Bars3Icon, XMarkIcon } from "@heroicons/react/24/solid";
 import MenuOverlay from "./MenuOverlay";
+import localFont from "next/font/local";
 
-export default function NavBar() {
+export default function NavBar(props: { className?: string }) {
   const navLinks = [
     {
       title: "Creon Pass",
@@ -54,9 +55,13 @@ export default function NavBar() {
     };
   }, [lastScrollY]);
 
+  // const myFont2 = localFont({
+  //   src: "../fonts/Satoshi-Bold.woff2",
+  //   display: "swap",
+  // });
   return (
     <nav
-      className={`active ${
+      className={`active ${props.className}  ${
         show
           ? "fixed top-0 left-0 right-0 z-50 bg-transparent transition-all duration-300 ease-in-out"
           : "hidden"
@@ -67,7 +72,7 @@ export default function NavBar() {
           href={"/"}
           className="text-2xl md:text-5xl text-white font-semibold"
         >
-          <img className="h-4 mr-2 sm:h-8" src="/images/Logo.svg" alt="logo" />
+          <img className="h-4 mr-2 sm:h-8" src="/images/Logo.webp" alt="logo" />
         </Link>
         <div className="mobile-menu block md:hidden">
           {!navbarOpen ? (

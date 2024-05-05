@@ -17,12 +17,14 @@ export default function Home() {
         muted
         className="h-screen"
       />
-      <div className="flex flex-col items-center justify-center min-h-screen px-[10%]">
-        <OpeningCard />
-        <CreonPassCard />
-        <ProfitingThroughCard />
-        <OurMissionCard />
-        <ComingSoonCard />
+      <div className="flex flex-col items-center justify-center min-h-screen ">
+        <div className="px-[10%]">
+          <OpeningCard />
+          <CreonPassCard />
+          <ProfitingThroughCard />
+          <OurMissionCard />
+          <ComingSoonCard />
+        </div>
         <BlogCard />
       </div>
     </div>

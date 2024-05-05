@@ -1,3 +1,9 @@
+import {
+  font_Bold_Satoshi,
+  font_Regular_MonumentExtended,
+  font_Regular_Satoshi,
+} from "@/assets/fonts/fonts_export";
+
 export function ProfitingThroughCard() {
   interface HeroSectionProps {
     title: string;
@@ -12,16 +18,26 @@ export function ProfitingThroughCard() {
     subtitle: "AI Innovation & Decentralization",
     description:
       "At Creon, we blend the power of AI tools with the dynamic crypto and NFT markets, utilizing an innovative business model to drive profitability. This approach empowers our community, as our NFT and token holders directly benefit from the growth and prosperity of the Creon network, creating a win-win scenario for both our community and for the projects we launch.",
-    imageUrl: "/images/image1.svg",
+    imageUrl: "/images/image1.webp",
     imageAlt: "Creon network image",
   };
   return (
     <section className="flex justify-center items-center  py-20 bg-black ">
       <div className="flex flex-col mt-12 w-full max-w-[1440px] max-md:mt-10 max-md:max-w-full">
-        <h1 className="text-7xl text-white uppercase leading-[74.8px] max-md:max-w-full max-md:text-4xl">
+        <h1
+          className={
+            "text-7xl text-white uppercase leading-[74.8px] max-md:max-w-full max-md:text-4xl " +
+            font_Regular_MonumentExtended.className
+          }
+        >
           {heroSectionData.title}
         </h1>
-        <h2 className="self-end mt-11 text-4xl leading-10 text-right uppercase bg-clip-text max-md:mt-10 max-md:max-w-full">
+        <h2
+          className={
+            "self-end mt-11 text-4xl leading-10 text-right uppercase bg-clip-text max-md:mt-10 max-md:max-w-full " +
+            font_Regular_MonumentExtended.className
+          }
+        >
           {heroSectionData.subtitle}
         </h2>
         <div className="flex gap-5 justify-between mt-24 text-white max-md:flex-wrap max-md:mt-10 max-md:max-w-full">
@@ -33,10 +49,18 @@ export function ProfitingThroughCard() {
           />
           <div className="shrink-0 w-px bg-zinc-900 h-[485px]" />
           <div className="flex flex-col justify-end my-auto w-[40%]">
-            <h3 className="text-2xl font-bold leading-7">
+            <h3
+              className={
+                "text-2xl font-bold leading-7 " + font_Bold_Satoshi.className
+              }
+            >
               The dynamic community driven business model of the future.
             </h3>
-            <p className="mt-7 text-lg leading-6">
+            <p
+              className={
+                "mt-7 text-lg leading-6 " + font_Regular_Satoshi.className
+              }
+            >
               {heroSectionData.description}
             </p>
           </div>

@@ -2,6 +2,10 @@
 import { Accordion, AccordionDetails, AccordionSummary } from "@mui/material";
 import ExpandMoreIcon from "@mui/icons-material/ExpandMore";
 import { ReactNode, useState } from "react";
+import {
+  font_Bold_Satoshi,
+  font_Regular_Satoshi,
+} from "@/assets/fonts/fonts_export";
 
 export function OurMissionItem(props: {
   img: string;
@@ -70,7 +74,7 @@ export function OurMissionItem(props: {
                 id="panel1-header"
               >
                 <h3
-                  className={`my-auto w-[366px]`}
+                  className={`my-auto w-[366px] ` + font_Bold_Satoshi.className}
                   style={{
                     color: isHovered && !isExpanded ? "#3B82F6" : "white",
                     transition: "color 0.5s",
@@ -80,7 +84,12 @@ export function OurMissionItem(props: {
                 </h3>
               </AccordionSummary>
               <AccordionDetails>
-                <p className="self-end text-lg leading-6 font-light w-[422px] max-md:max-w-full">
+                <p
+                  className={
+                    "self-end text-lg leading-6 font-light w-[422px] max-md:max-w-full " +
+                    font_Regular_Satoshi.className
+                  }
+                >
                   {props.content}
                 </p>
               </AccordionDetails>

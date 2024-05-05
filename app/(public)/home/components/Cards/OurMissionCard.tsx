@@ -1,12 +1,13 @@
 import { Span } from "next/dist/trace";
 import { OurMissionItem } from "../OurMissionItem";
+import { font_Regular_MonumentExtended } from "@/assets/fonts/fonts_export";
 
 export function OurMissionCard() {
-  const ext2 = "/images/image2.svg";
+  const ext2 = "/images/image2.webp";
   const data = [
     {
-      img: "/images/mission1-1.svg",
-      clickedImg: "/images/mission1-2.svg",
+      img: "/images/mission1-1.webp",
+      clickedImg: "/images/mission1-2.webp",
       title: (
         <span>
           Profitability and <br /> Growth
@@ -24,8 +25,8 @@ export function OurMissionCard() {
     },
 
     {
-      img: "/images/mission2-1.svg",
-      clickedImg: "/images/mission2-2.svg",
+      img: "/images/mission2-1.webp",
+      clickedImg: "/images/mission2-2.webp",
       title: (
         <span>
           Transparent & Fair Decentralized <br /> Earnings
@@ -40,8 +41,8 @@ export function OurMissionCard() {
       ),
     },
     {
-      img: "/images/mission3-1.svg",
-      clickedImg: "/images/mission3-2.svg",
+      img: "/images/mission3-1.webp",
+      clickedImg: "/images/mission3-2.webp",
       title: (
         <span>
           Launching the
@@ -59,8 +60,8 @@ export function OurMissionCard() {
     },
 
     {
-      img: "/images/mission4-1.svg",
-      clickedImg: "/images/mission4-2.svg",
+      img: "/images/mission4-1.webp",
+      clickedImg: "/images/mission4-2.webp",
       title: (
         <span>
           Limitless Possibilities of AI
@@ -83,7 +84,12 @@ export function OurMissionCard() {
         <div className="z-10 max-md:max-w-full">
           <div className="flex gap-5 max-md:flex-col max-md:gap-0">
             <div className="flex flex-col w-[59%] max-md:ml-0 max-md:w-full ">
-              <h2 className="w-full text-4xl leading-10 text-white uppercase bg-clip-text bg-[linear-gradient(90deg,#3D8BFF_0%,#AB23FF_100%)] max-md:mt-10 max-md:max-w-full">
+              <h2
+                className={
+                  "w-full text-4xl leading-10 text-white uppercase bg-clip-text bg-[linear-gradient(90deg,#3D8BFF_0%,#AB23FF_100%)] max-md:mt-10 max-md:max-w-full " +
+                  font_Regular_MonumentExtended.className
+                }
+              >
                 Our vision is to support the innovation of AI blockchain
                 projects while prioritizing communities and democratizing
                 profits
