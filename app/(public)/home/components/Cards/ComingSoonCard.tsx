@@ -1,4 +1,4 @@
-import { ComingSoonItem } from "../ComingSoonItem";
+import { ComingSoonItem } from "../items/ComingSoonItem";
 
 export function ComingSoonCard() {
   const tokenCardData = [

@@ -1,5 +1,5 @@
 import { Span } from "next/dist/trace";
-import { OurMissionItem } from "../OurMissionItem";
+import { OurMissionItem } from "../items/OurMissionItem";
 import { font_Regular_MonumentExtended } from "@/assets/fonts/fonts_export";
 
 export function OurMissionCard() {
