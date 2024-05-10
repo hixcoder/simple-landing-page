@@ -1,7 +1,4 @@
-import {
-  font_Bold_Satoshi,
-  font_Regular_Satoshi,
-} from "@/assets/fonts/fonts_export";
+import { font_Bold_Satoshi, font_Regular_Satoshi } from "@/utils/fonts_export";
 import { FaDiscord } from "react-icons/fa";
 import { FaTwitter } from "react-icons/fa";
 import { FaTelegramPlane } from "react-icons/fa";

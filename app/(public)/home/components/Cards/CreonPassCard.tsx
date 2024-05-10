@@ -2,7 +2,7 @@ import {
   font_Regular_MonumentExtended,
   font_Bold_Satoshi,
   font_Regular_Satoshi,
-} from "../../../../../assets/fonts/fonts_export";
+} from "../../../../../utils/fonts_export";
 
 export function CreonPassCard() {
   const benefits = [

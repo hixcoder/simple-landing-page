@@ -1,6 +1,6 @@
 import { Span } from "next/dist/trace";
 import { OurMissionItem } from "../items/OurMissionItem";
-import { font_Regular_MonumentExtended } from "@/assets/fonts/fonts_export";
+import { font_Regular_MonumentExtended } from "@/utils/fonts_export";
 
 export function OurMissionCard() {
   const ext2 = "/images/image2.webp";

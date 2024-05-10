@@ -1,4 +1,4 @@
-import { font_Bold_Satoshi } from "@/assets/fonts/fonts_export";
+import { font_Bold_Satoshi } from "@/utils/fonts_export";
 import Footer from "@/components/Footer";
 import NavBar from "@/components/header/NavBar";
 import Home from "./(public)/home/page";

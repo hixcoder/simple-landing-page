@@ -1,7 +1,7 @@
 import {
   font_Regular_MonumentExtended,
   font_Bold_Satoshi,
-} from "../../../../../assets/fonts/fonts_export";
+} from "../../../../../utils/fonts_export";
 
 export function OpeningCard() {
   const title =

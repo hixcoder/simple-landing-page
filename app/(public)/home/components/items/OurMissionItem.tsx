@@ -2,10 +2,7 @@
 import { Accordion, AccordionDetails, AccordionSummary } from "@mui/material";
 import ExpandMoreIcon from "@mui/icons-material/ExpandMore";
 import { ReactNode, useState } from "react";
-import {
-  font_Bold_Satoshi,
-  font_Regular_Satoshi,
-} from "@/assets/fonts/fonts_export";
+import { font_Bold_Satoshi, font_Regular_Satoshi } from "@/utils/fonts_export";
 
 export function OurMissionItem(props: {
   img: string;
