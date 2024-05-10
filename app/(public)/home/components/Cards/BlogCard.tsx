@@ -30,15 +30,24 @@ export function BlogCard() {
 
   return (
     <div
-      className="flex flex-col  px-[10%] pb-8 "
-      style={{
-        backgroundImage: `url(/images/blog_bg.webp)`,
-      }}
+      className="flex flex-col md:px-[10%] pb-8 relative min-h-screen"
+      // style={{
+      //   backgroundImage: `url(/images/blog_bg.webp)`,
+      // }}
     >
-      <div className="flex flex-col  w-full">
-        {" "}
+      <video
+        src={"/videos/roadmap-video.mp4"}
+        autoPlay
+        loop
+        muted
+        className=" h-full  w-full absolute inset-0 object-cover z-0"
+      />
+      {/* <div className=" bg-gradient-to-t from-black via-transparent to-transparent absolute inset-0 h-full "></div> */}
+      <div className=" bg-gradient-to-t from-transparent via-black to-black absolute inset-0 h-32 top-0"></div>
+      <div className="bg-black absolute inset-0 h-full opacity-50"></div>
+      <div className="flex flex-col  w-full z-10">
         {contentBlockData.map((block, index) => (
-          <section
+          <div
             key={index}
             className="pl-10 mt-5 justify-center items-center w-[80%] lg:w-full rounded-lg bg-zinc-900 bg-opacity-60 max-md:pl-5 max-md:max-w-full"
           >
@@ -83,7 +92,7 @@ export function BlogCard() {
                 )}
               </div>
             </div>
-          </section>
+          </div>
         ))}
       </div>
     </div>

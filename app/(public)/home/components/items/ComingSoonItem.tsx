@@ -24,7 +24,8 @@ export const ComingSoonItem: React.FC<ComingSoonItemProps> = ({
   const [isHovered, setIsHovered] = React.useState<boolean>(false);
   return (
     <div
-      className="flex flex-col grow pb-14  md:w-[100%] lg:w-[80%]  lg:mx-0 2xl:w-full rounded-md bg-zinc-900 bg-opacity-60 max-md:mt-10 relative "
+      className="flex flex-col justify-between grow w-[80%] lg:w-fit lg:pb-14 mx-auto  lg:mx-0 2xl:w-full rounded-md
+       bg-zinc-900 bg-opacity-60 relative gap mt-6 lg:mt-0"
       onMouseEnter={() => {
         setIsHovered(true);
         console.log("hovered");
@@ -33,7 +34,7 @@ export const ComingSoonItem: React.FC<ComingSoonItemProps> = ({
     >
       <div
         className={
-          "justify-center self-end px-1.5 py-1 mr-8 text-xs font-bold leading-3 text-center text-black bg-white rounded-[100px] max-md:mr-2.5 absolute -top-2 " +
+          "justify-center self-end px-1.5 py-1 mr-8 text-xs font-bold text-center text-black bg-white rounded-[100px] max-md:mr-2.5 absolute -top-2 " +
           font_Bold_Satoshi.className
         }
       >
@@ -55,7 +56,6 @@ export const ComingSoonItem: React.FC<ComingSoonItemProps> = ({
           style={{
             WebkitBackgroundClip: "text",
             WebkitTextFillColor: "transparent",
-            // max 2lines
             display: "-webkit-box",
             WebkitLineClamp: 2,
             WebkitBoxOrient: "vertical",

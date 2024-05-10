@@ -12,7 +12,7 @@ export default function Home() {
     <div className="flex flex-col items-center justify-center min-h-screen  w-screen">
       <OpeningCard />
       <div className="flex flex-col items-center justify-center w-full">
-        <div className="xl:px-[10%] ">
+        <div className="lg:px-[10%] ">
           <CreonPassCard />
           <ProfitingThroughCard />
           <OurMissionCard />

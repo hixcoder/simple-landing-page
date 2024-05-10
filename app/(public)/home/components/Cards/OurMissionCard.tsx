@@ -79,59 +79,54 @@ export function OurMissionCard() {
     },
   ];
   return (
-    <section className="flex flex-col items-center pt-20 bg-black">
-      <div className="flex flex-col mt-9 w-full max-w-[1440px] max-md:max-w-full">
-        <div className="z-10 max-md:max-w-full">
-          <div className="flex gap-5 max-md:flex-col max-md:gap-0">
-            <div className="flex flex-col w-[50%] xl:w-[59%] h-fit max-md:ml-0 max-md:w-full pl-20 xl:pl-0 items-center  ">
-              <h2
-                className={
-                  "w-[40%] xl:w-full mx-auto text-xl xl:text-4xl max-md:text-4xl  text-white uppercase bg-clip-text  max-md:mt-10 max-md:max-w-full    " +
-                  font_Regular_MonumentExtended.className
-                }
-              >
-                Our vision is to support the innovation of AI blockchain
-                projects
-                <span
-                  className="bg-gradient-to-r from-[#3D8BFF]  to-[#AB23FF]"
-                  style={{
-                    WebkitBackgroundClip: "text",
-                    WebkitTextFillColor: "transparent",
-                  }}
-                >
-                  while prioritizing communities and democratizing profits
-                </span>
-              </h2>
-              <div className="relative">
-                <img
-                  loading="lazy"
-                  src={ext2}
-                  alt="ff"
-                  className="w-full h-auto max-w-[1321px] aspect-w-24 aspect-h-10 max-md:max-w-full "
-                />
-                <div className="absolute inset-0 flex flex-col justify-between h-full">
-                  <div className="h-16 bg-gradient-to-b from-black to-transparent"></div>
-                  <div className="h-16 bg-gradient-to-t from-black to-transparent"></div>
-                  {/* Add inner shadows from left and right */}
-                </div>
-              </div>
-            </div>
-            <div className="flex flex-col xl:ml-5 w-[41%] max-md:ml-0 max-md:w-full">
-              {data.map((item, index) => {
-                return (
-                  <OurMissionItem
-                    key={index}
-                    title={item.title}
-                    content={item.content}
-                    img={item.img}
-                    clickedImg={item.clickedImg}
-                  />
-                );
-              })}
-            </div>
+    <div className="flex lg:flex-row flex-col items-center justify-center lg:pt-20 bg-black min-h-screen">
+      <div className="flex flex-col items-center justify-center mx-auto lg:mx-0 w-[90%]">
+        <h2
+          className={
+            ` w-fit bg-red-300 bg-clip-text  text-white uppercase text-lg md:text-xl lg:text-4xl xl:text-5xl  ` +
+            font_Regular_MonumentExtended.className
+          }
+          style={{
+            margin: "0.5rem",
+          }}
+        >
+          Our vision is to support the innovation of AI blockchain projects{" "}
+          <span
+            className="bg-gradient-to-r from-[#3D8BFF]  to-[#AB23FF]"
+            style={{
+              WebkitBackgroundClip: "text",
+              WebkitTextFillColor: "transparent",
+            }}
+          >
+            while prioritizing communities and democratizing profits
+          </span>
+        </h2>
+        <div className="relative">
+          <img
+            loading="lazy"
+            src={ext2}
+            alt="ff"
+            className="w-full h-auto max-w-[1321px] aspect-w-24 aspect-h-10 max-md:max-w-full "
+          />
+          <div className="absolute inset-0 flex flex-col justify-between h-full">
+            <div className="h-16 bg-gradient-to-b from-black to-transparent"></div>
+            <div className="h-16 bg-gradient-to-t from-black to-transparent"></div>
           </div>
         </div>
       </div>
-    </section>
+      <div className="flex flex-col lg:ml-5 mx-auto justify-start">
+        {data.map((item, index) => {
+          return (
+            <OurMissionItem
+              key={index}
+              title={item.title}
+              content={item.content}
+              img={item.img}
+              clickedImg={item.clickedImg}
+            />
+          );
+        })}
+      </div>
+    </div>
   );
 }

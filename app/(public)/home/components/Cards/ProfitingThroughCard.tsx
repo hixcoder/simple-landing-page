@@ -22,8 +22,8 @@ export function ProfitingThroughCard() {
     imageAlt: "Creon network image",
   };
   return (
-    <div className="flex flex-col justify-center items-center py-6 lg:py-12 bg-black  mt-[3rem] ">
-      <div className="px-16 w-full">
+    <div className="flex flex-col justify-around items-center py-6 lg:py-12 bg-black  mt-[3rem] px-8 min-h-screen">
+      <div className="w-full">
         <h1
           className={
             "text-white uppercase text-2xl lg:text-4xl xl:text-5xl 2xl:text-7xl " +
@@ -45,36 +45,30 @@ export function ProfitingThroughCard() {
           {heroSectionData.subtitle}
         </h2>
       </div>
-      <div className="px-16">
-        <div className="flex flex-col justify-center lg:flex-row lg:justify-between mt-6 lg:mt-12 text-white ">
-          <img
-            loading="lazy"
-            src={heroSectionData.imageUrl}
-            alt={heroSectionData.imageAlt}
-            className="w-full lg:w-[60%] h-[20.3125rem]"
-          />
-          {/* <div className="flex flex-row mt-6 lg:mt-0  justify-around"> */}
-          {/* <div className="shrink-0 w-[1px] bg-zinc-900 h-96 " /> */}
-          <div className="flex flex-col justify-end my-auto w-[95%] md:w-[80%] lg:w-1/2  border-x-2 border-zinc-700 px-8 py-16 mx-auto lg:mx-0 lg:ml-12 mt-6 lg:mt-0">
-            <h3
-              className={
-                "sm:lg md:xl lg:text-2xl font-bold leading-7 " +
-                font_Bold_Satoshi.className
-              }
-            >
-              The dynamic community driven business model of the future.
-            </h3>
-            <p
-              className={
-                "mt-[1.75rem] sm:text-sm md:text-md  lg:text-lg leading-6 " +
-                font_Regular_Satoshi.className
-              }
-            >
-              {heroSectionData.description}
-            </p>
-          </div>
-          {/* <div className="shrink-0 w-[1px] bg-zinc-900 h-96" /> */}
-          {/* </div> */}
+      <div className="flex flex-col justify-center lg:flex-row lg:justify-between mt-6 lg:mt-12 text-white ">
+        <img
+          loading="lazy"
+          src={heroSectionData.imageUrl}
+          alt={heroSectionData.imageAlt}
+          className="w-full lg:w-[60%] h-[20.3125rem]"
+        />
+        <div className="flex flex-col justify-end my-auto w-[95%] md:w-[80%] lg:w-1/2  border-x-2 border-zinc-700 px-8 py-16 mx-auto lg:mx-0 lg:ml-12 mt-6 lg:mt-0">
+          <h3
+            className={
+              "sm:lg md:xl lg:text-2xl font-bold leading-7 " +
+              font_Bold_Satoshi.className
+            }
+          >
+            The dynamic community driven business model of the future.
+          </h3>
+          <p
+            className={
+              "mt-[1.75rem] sm:text-sm md:text-md  lg:text-lg leading-6 " +
+              font_Regular_Satoshi.className
+            }
+          >
+            {heroSectionData.description}
+          </p>
         </div>
       </div>
     </div>
