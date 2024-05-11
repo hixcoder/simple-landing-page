@@ -32,4 +32,4 @@ To compile and run simple-landingpage, follow these steps:
    ```
 4. Check the link:
 
-- _<a href="https://simplelandingpage-hixcodergmailcoms-projects.vercel.app" target="_blank">simple-landingpage</a><br>_
+- _<a href="https://simple-landing-page-sandy.vercel.app/" target="_blank">simple-landingpage</a><br>_
