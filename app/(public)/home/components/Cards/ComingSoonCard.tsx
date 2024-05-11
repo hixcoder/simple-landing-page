@@ -20,7 +20,7 @@ export function ComingSoonCard() {
     },
     {
       title: "launchpad",
-      shortDescription: "Driving the future of AI Innovation",
+      shortDescription: "Driving the future of AI Innovation for all",
       description:
         "The Creon AI Launchpad, an essential component of our initiative, represents a groundbreaking opportunity in the realm of AI and blockchain. It provides the first known platform for acquiring allocations in tokenized AI projects, offering our community of NFT and CREON token holders early access to innovative and promising AI endeavors.",
       imageUrl: "/images/coming3.webp",
@@ -33,7 +33,8 @@ export function ComingSoonCard() {
       {tokenCardData.map((card, index) => (
         <div
           key={index}
-          className={`flex flex-col gap-2 lg:gap-4 lg:flex-row justify-center items-centermy-auto  w-[100%] lg:w-[40%]`}
+          className={`flex flex-col px-4 md:px-8 lg:px-0 py-8 lg:flex-row 
+          justify-center items-center w-full`}
         >
           <ComingSoonItem {...card} />
         </div>

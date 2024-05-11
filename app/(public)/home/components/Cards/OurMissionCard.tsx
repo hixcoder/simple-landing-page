@@ -79,11 +79,11 @@ export function OurMissionCard() {
     },
   ];
   return (
-    <div className="flex lg:flex-row flex-col items-center justify-center lg:pt-20 bg-black min-h-screen">
-      <div className="flex flex-col items-center justify-center mx-auto lg:mx-0 w-[90%]">
+    <div className="flex lg:flex-row flex-col items-center justify-center lg:justify-between lg:pt-20 px-8 lg:px-0 bg-black min-h-screen mb-4 lg:mb-8 ">
+      <div className="flex flex-col items-center justify-center mx-auto lg:mx-0 ">
         <h2
           className={
-            ` w-fit bg-red-300 bg-clip-text  text-white uppercase text-lg md:text-xl lg:text-4xl xl:text-5xl  ` +
+            ` w-fit bg-red-300 bg-clip-text  text-white uppercase text-lg md:text-xl lg:text-2xl xl:text-5xl  ` +
             font_Regular_MonumentExtended.className
           }
           style={{
@@ -114,7 +114,7 @@ export function OurMissionCard() {
           </div>
         </div>
       </div>
-      <div className="flex flex-col lg:ml-5 mx-auto justify-start">
+      <div className="flex flex-col justify-center items-center w-full lg:ml-5 mx-auto lg:justify-start ">
         {data.map((item, index) => {
           return (
             <OurMissionItem

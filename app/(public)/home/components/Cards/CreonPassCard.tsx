@@ -38,10 +38,11 @@ export function CreonPassCard() {
           and a ticket to generate passive income through AI-driven tools
         </p>
         <div className="lg:hidden lg:ml-5 w-full lg:w-1/2 relative mt-10  p-0 mx-auto">
-          <img
-            loading="lazy"
-            src="/images/card2_phone.png"
-            alt="Creon Pass NFT"
+          <video
+            src={"/videos/nft-video.mp4"}
+            autoPlay
+            loop
+            muted
             className="h-full w-full object-cover rounded-lg shadow-2xl md:w-[70%]  lg:w-full mx-auto lg:mx-0"
           />
           <div className="absolute inset-0 flex flex-col justify-between h-full p-0">
@@ -62,7 +63,10 @@ export function CreonPassCard() {
         ))}
         <button
           className={
-            "px-16 py-5 mt-10 lg:mt-20 font-bold text-center text-white rounded-lg bg-gradient-to-r from-[#3D8BFF] to-[#AB23FF] w-full lg:w-auto " +
+            `px-16 py-5 mt-10 lg:mt-20 font-bold 
+            text-center text-white rounded-lg bg-gradient-to-r from-[#3D8BFF] to-[#AB23FF] w-full lg:w-auto
+               hover:bg-gradient-to-r hover:from-[#3D8BFF] hover:to-[#3D8BFF] 
+              transition-all duration-300 ease-in-out ` +
             font_Bold_Satoshi.className
           }
         >
@@ -70,12 +74,14 @@ export function CreonPassCard() {
         </button>
       </div>
       <div className="hidden lg:block relative lg:ml-5 w-full lg:w-1/2  mt-10  p-0 mx-auto">
-        <img
-          loading="lazy"
-          src="/images/card2_phone.png"
-          alt="Creon Pass NFT"
+        <video
+          src={"/videos/nft-video.mp4"}
+          autoPlay
+          loop
+          muted
           className="h-full w-full object-cover rounded-lg shadow-2xl md:w-[70%]  lg:w-full mx-auto lg:mx-0"
         />
+
         <div className="absolute inset-0 flex flex-col justify-between h-full p-0">
           <div className="lg:h-16 h-8 bg-gradient-to-b from-black via-black to-transparent"></div>
           <div className="lg:h-16 h-8 bg-gradient-to-t from-black via-black to-transparent"></div>

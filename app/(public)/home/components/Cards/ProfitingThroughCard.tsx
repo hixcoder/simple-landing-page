@@ -46,11 +46,19 @@ export function ProfitingThroughCard() {
         </h2>
       </div>
       <div className="flex flex-col justify-center lg:flex-row lg:justify-between mt-6 lg:mt-12 text-white ">
-        <img
+        {/* <img
           loading="lazy"
           src={heroSectionData.imageUrl}
           alt={heroSectionData.imageAlt}
           className="w-full lg:w-[60%] h-[20.3125rem]"
+        /> */}
+        <video
+          src={"/videos/creon-logo.mp4"}
+          autoPlay
+          loop
+          muted
+          className="w-full lg:w-[60%] h-[20.3125rem]"
+          // className="h-full w-full object-cover rounded-lg shadow-2xl md:w-[70%]  lg:w-full mx-auto lg:mx-0"
         />
         <div className="flex flex-col justify-end my-auto w-[95%] md:w-[80%] lg:w-1/2  border-x-2 border-zinc-700 px-8 py-16 mx-auto lg:mx-0 lg:ml-12 mt-6 lg:mt-0">
           <h3

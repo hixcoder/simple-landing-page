@@ -130,7 +130,12 @@ export default function NavBar(props: { className?: string }) {
               </li>
             ))}
             <li>
-              <div className="justify-center px-8 py-2 text-lg text-center  cursor-pointer text-white whitespace-nowrap rounded-md border-2 border-white border-solid max-md:px-5">
+              <div
+                className="justify-center px-8 py-2 text-lg text-center 
+              hover:bg-blue-600 transition-all duration-300 ease-in-out
+              
+              cursor-pointer text-white whitespace-nowrap rounded-md border-2 border-white border-solid max-md:px-5"
+              >
                 Connect
               </div>
             </li>
@@ -164,7 +169,11 @@ export default function NavBar(props: { className?: string }) {
         >
           <ul className="flex  gap-2 p-0 flex-col space-x-8  justify-end items-end">
             <li className="flex flex-row">
-              <div className="justify-center items-center px-8 py-2 mb-4 text-lg text-center ml-4 cursor-pointer text-white whitespace-nowrap rounded-md border-2 border-white border-solid max-md:px-5">
+              <div
+                className="justify-center items-center px-8 py-2
+              hover:bg-blue-600 transition-all duration-300 ease-in-out
+               mb-4 text-lg text-center ml-4 cursor-pointer text-white whitespace-nowrap rounded-md border-2 border-white border-solid max-md:px-5"
+              >
                 Connect
               </div>
               <div

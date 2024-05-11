@@ -14,8 +14,8 @@ export function OurMissionItem(props: {
   const [isHovered, setIsHovered] = useState<boolean>(false);
   return (
     <div
-      className={`flex flex-row align-top   sm:gap-2 xl:gap-5 pb-4
-       justify-between items-start text-white cursor-pointer w-[60%] lg:w-[100%]`}
+      className={`flex flex-row align-top
+       justify-center items-start text-white cursor-pointer w-full  px-4 mx-auto lg:mx-0 lg:px-0   mt-2 lg:mt-4 lg:ml-4 sm:gap-2 xl:gap-5 pb-4`}
       onMouseEnter={() => {
         setIsHovered(true);
         console.log("hovered");
@@ -30,7 +30,7 @@ export function OurMissionItem(props: {
         loading="lazy"
         src={isExpanded ? props.clickedImg : props.img}
         alt=""
-        className="shrink-0 aspect-[0.88] xl:w-[6.25rem] lg:w-[5rem] sm:w-[6rem] w-[3rem]"
+        className="shrink-0 aspect-[0.88] lg:w-[6rem]  w-[4rem]"
         style={{
           transition: "opacity 0.5s ease-in-out",
         }}
@@ -41,9 +41,12 @@ export function OurMissionItem(props: {
           backgroundColor: "black",
           color: "white",
           display: "flex",
+          justifyItems: "space-between",
+          width: "100%",
+          // backgroundColor: "red",
           flexDirection: "column",
           justifyContent: "top",
-          alignItems: "center",
+          alignItems: "space-between",
         }}
       >
         <AccordionSummary
@@ -63,10 +66,7 @@ export function OurMissionItem(props: {
           id="panel1-header"
         >
           <h3
-            className={
-              `my-auto w-[16rem] lg:w-[18rem] xl:w-[22.875rem] ` +
-              font_Bold_Satoshi.className
-            }
+            className={`my-auto  ` + font_Bold_Satoshi.className}
             style={{
               color: isHovered && !isExpanded ? "#3B82F6" : "white",
               transition: "color 0.5s",
@@ -78,7 +78,7 @@ export function OurMissionItem(props: {
         <AccordionDetails>
           <p
             className={
-              "self-end text-lg leading-6 font-light w-[18rem] xl:w-[26.375rem] max-md:max-w-full cursor-text " +
+              "self-end text-sm md:text-lg leading-6 font-light cursor-text " +
               font_Regular_Satoshi.className
             }
           >
