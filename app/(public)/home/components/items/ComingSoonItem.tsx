@@ -71,7 +71,7 @@ export const ComingSoonItem: React.FC<ComingSoonItemProps> = ({
       </div>
       {/* image */}
       <div
-        className="xl:mt-16 mt-8  max-w-full aspect-[1.82] w-[80%] max-md:mt-10"
+        className="xl:mt-16 mt-8 my-auto max-w-full aspect-[1.82] w-[80%] max-md:mt-10"
         style={{
           overflow: "hidden",
         }}
